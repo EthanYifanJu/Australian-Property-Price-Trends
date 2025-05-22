@@ -18,8 +18,7 @@ This project leverages data from the [Australian Bureau of Statistics (ABS)](htt
 
 Australian Bureau of Statistics (ABS):
 - Residential Property Price Indexes: Eight Capital Cities
-- ABS Data API
-The ABS Data API provides programmatic access to various datasets, including residential property prices.
+- ABS Data API: The ABS Data API provides programmatic access to various datasets, including residential property prices.
 
 ## 🛠️ Technologies Used
 
