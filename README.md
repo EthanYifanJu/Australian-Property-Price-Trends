@@ -1,17 +1,17 @@
 # 🏡 Australian Property Price Trends
 
-An interactive web application that visualizes and analyzes residential property price trends across Australia's capital cities over time.
+An interactive web application that visualises and analyses residential property price trends across Australia's capital cities over time.
 
 ## 📊 Project Overview
 
-This project leverages data from the [Australian Bureau of Statistics (ABS)](https://www.abs.gov.au) to provide insights into the residential property market in Australia. Users can explore property price trends, compare different cities, and analyze changes over time.
+This project leverages data from the [Australian Bureau of Statistics (ABS)](https://www.abs.gov.au) to provide insights into the residential property market in Australia. Users can explore property price trends, compare different cities, and analyse changes over time.
 
 ## 🔍 Features
 
 - Interactive time-series charts of property price indexes for each capital city.
-- Comparison tools to analyze trends between different cities.
+- Comparison tools to analyse trends between different cities.
 - Filters to view data by property type (e.g., houses, attached dwellings).
-- Geospatial visualizations highlighting regional price changes.
+- Geospatial visualisations highlighting regional price changes.
 - Downloadable reports and data summaries.
 
 ## 📂 Data Sources
