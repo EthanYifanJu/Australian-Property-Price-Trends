@@ -17,7 +17,7 @@ This project leverages data from the [Australian Bureau of Statistics (ABS)](htt
 ## 📂 Data Sources
 
 Australian Bureau of Statistics (ABS):
-- [Total Value of Dwellings](https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/total-value-dwellings)
+- [Residential Property Price Indexes: Eight Capital Cities](https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/residential-property-price-indexes-eight-capital-cities)
 - [ABS Data API](https://www.abs.gov.au/about/data-services/application-programming-interfaces-apis/data-api-user-guide): The ABS Data API provides programmatic access to various datasets.
 
 ## 🛠️ Technologies Used
