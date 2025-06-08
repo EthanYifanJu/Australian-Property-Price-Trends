@@ -1,55 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ABS Data Visualisation</title>
     <meta charset="UTF-8">
+    <title>ABS Data Visualisation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        .container {
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .description {
+            text-align: left;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        label {
+            font-weight: 600;
+            margin-top: 15px;
+            display: block;
+        }
+
+        select,
+        input[type="text"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        select[multiple] {
+            height: 180px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1a252f;
+        }
+
+        h2 {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            select[multiple] {
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>ABS Data Graph Generator</h1>
+    <div class="navbar">
+        <div>ABS Visualiser</div>
+        <div>
+            <a href="/">Home</a>
+            <a href="privacy.html">Privacy</a>
+        </div>
+    </div>
 
-    <form method="POST">
-        <label>Measure:</label>
-        <select name="measure">
-            <option value="1" {% if request.form.get('measure') == '1' %}selected{% endif %}>Index Numbers</option>
-            <option value="2" {% if request.form.get('measure') == '2' %}selected{% endif %}>Percentage Change from Previous Period</option>
-            <option value="3" {% if request.form.get('measure') == '3' %}selected{% endif %}>Percentage Change from Previous Year</option>
-        </select><br><br>
+    <div class="container">
+        <h1>ABS Data Graph Generator</h1>
+        <p class="description">
+            This tool allows you to generate graphs based on residential property price indexes from the <a href="https://www.abs.gov.au/">Australian Bureau of Statistics (ABS)</a>.
+            Choose your desired measure, property type, region, and time period to visualise the data. Use this for analysis, academic research,
+            or policy planning. More details on methodology are available <a href="https://www.abs.gov.au/methodologies/residential-property-price-indexes-eight-capital-cities-methodology/dec-2021">here</a>.
+        </p>
 
-        <label>Property Type:</label>
-        <select name="property_type">
-            <option value="1" {% if request.form.get('property_type') == '1' %}selected{% endif %}>Attached dwellings</option>
-            <option value="2" {% if request.form.get('property_type') == '2' %}selected{% endif %}>Established houses</option>
-            <option value="3" {% if request.form.get('property_type') == '3' %}selected{% endif %}>Residential property</option>
-        </select><br><br>
+        <form method="POST">
+            <label for="measure">Measure:</label>
+            <select name="measure" id="measure">
+                <option value="1" {% if request.form.get('measure') == '1' %}selected{% endif %}>Index Numbers</option>
+                <option value="2" {% if request.form.get('measure') == '2' %}selected{% endif %}>Percentage Change from Previous Period</option>
+                <option value="3" {% if request.form.get('measure') == '3' %}selected{% endif %}>Percentage Change from Previous Year</option>
+            </select>
 
-        <label>Region:</label>
-        <select name="region" multiple size="9">
-            {% set selected_regions = request.form.getlist('region') %}
-            <option value="1GSYD" {% if '1GSYD' in selected_regions %}selected{% endif %}>Greater Sydney</option>
-            <option value="2GMEL" {% if '2GMEL' in selected_regions %}selected{% endif %}>Greater Melbourne</option>
-            <option value="3GBRI" {% if '3GBRI' in selected_regions %}selected{% endif %}>Greater Brisbane</option>
-            <option value="4GADE" {% if '4GADE' in selected_regions %}selected{% endif %}>Greater Adelaide</option>
-            <option value="5GPER" {% if '5GPER' in selected_regions %}selected{% endif %}>Greater Perth</option>
-            <option value="6GHOB" {% if '6GHOB' in selected_regions %}selected{% endif %}>Greater Hobart</option>
-            <option value="7GDAR" {% if '7GDAR' in selected_regions %}selected{% endif %}>Greater Darwin</option>
-            <option value="8ACTE" {% if '8ACTE' in selected_regions %}selected{% endif %}>Australian Capital Territory</option>
-            <option value="100" {% if '100' in selected_regions %}selected{% endif %}>8 Capital Cities (Weighted Average)</option>
-        </select><br><br>
+            <label for="property_type">Property Type:</label>
+            <select name="property_type" id="property_type">
+                <option value="1" {% if request.form.get('property_type') == '1' %}selected{% endif %}>Attached dwellings</option>
+                <option value="2" {% if request.form.get('property_type') == '2' %}selected{% endif %}>Established houses</option>
+                <option value="3" {% if request.form.get('property_type') == '3' %}selected{% endif %}>Residential property</option>
+            </select>
 
-        <label>Start Period (format: YYYY-QX):</label>
-        <input type="text" name="start_period" placeholder="Starts from 2003-Q3"
-               value="{{ request.form.get('start_period', '') }}"><br><br>
+            <label for="region">Region:</label>
+            <select name="region" id="region" multiple>
+                {% set selected_regions = request.form.getlist('region') %}
+                <option value="1GSYD" {% if '1GSYD' in selected_regions %}selected{% endif %}>Greater Sydney</option>
+                <option value="2GMEL" {% if '2GMEL' in selected_regions %}selected{% endif %}>Greater Melbourne</option>
+                <option value="3GBRI" {% if '3GBRI' in selected_regions %}selected{% endif %}>Greater Brisbane</option>
+                <option value="4GADE" {% if '4GADE' in selected_regions %}selected{% endif %}>Greater Adelaide</option>
+                <option value="5GPER" {% if '5GPER' in selected_regions %}selected{% endif %}>Greater Perth</option>
+                <option value="6GHOB" {% if '6GHOB' in selected_regions %}selected{% endif %}>Greater Hobart</option>
+                <option value="7GDAR" {% if '7GDAR' in selected_regions %}selected{% endif %}>Greater Darwin</option>
+                <option value="8ACTE" {% if '8ACTE' in selected_regions %}selected{% endif %}>Australian Capital Territory</option>
+                <option value="100" {% if '100' in selected_regions %}selected{% endif %}>8 Capital Cities (Weighted Average)</option>
+            </select>
 
-        <label>End Period (format: YYYY-QX):</label>
-        <input type="text" name="end_period" placeholder="Ends until 2021-Q4"
-               value="{{ request.form.get('end_period', '') }}"><br><br>
-        <input type="submit" value="Generate Graph">
-    </form>
+            <label for="start_period">Start Period (e.g., 2003-Q3):</label>
+            <input type="text" name="start_period" id="start_period" placeholder="Starts from 2003-Q3"
+                   value="{{ request.form.get('start_period', '') }}">
 
-    {% if graph_html %}
-        <h2>Result:</h2>
-        {{ graph_html | safe }}
-    {% endif %}
+            <label for="end_period">End Period (e.g., 2021-Q4):</label>
+            <input type="text" name="end_period" id="end_period" placeholder="Ends until 2021-Q4"
+                   value="{{ request.form.get('end_period', '') }}">
+
+            <input type="submit" value="Generate Graph">
+        </form>
+
+        {% if graph_html %}
+            <h2>Result:</h2>
+            {{ graph_html | safe }}
+        {% endif %}
+    </div>
 
     <script>
         window.onload = function () {
@@ -61,7 +176,5 @@
             {% endwith %}
         };
     </script>
-    
-    
 </body>
 </html>

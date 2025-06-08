@@ -32,5 +32,13 @@ def index():
 
     return render_template('index.html', graph_html=graph_html)
 
+@app.route('/privacy.html')
+def privacy():
+    return render_template('privacy.html')
+
+@app.route('/contact.html')
+def contact():
+    return render_template('contact.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
