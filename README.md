@@ -22,27 +22,31 @@ Australian Bureau of Statistics (ABS):
 
 ## 🛠️ Technologies Used
 
-Frontend:
+### Frontend
 
+- **HTML5** – Structuring the web content.
+- **CSS3** – Styling the user interface.
+- **JavaScript** – Adding interactivity to the web page.
+- **Plotly.js** – Rendering interactive charts and graphs.
 
-Backend:
+### Backend
 
+- **Python 3** – Core programming language.
+- **Flask** – Lightweight web application framework for handling HTTP requests and routing.
+- **Jinja2** – Templating engine used with Flask to generate dynamic HTML content.
 
-Deployment:
+### Deployment
 
+- **GitHub Pages** – Hosts the static version of the website for free.
 
 ## 🚀 Getting Started
 
-
-
-## 🧪 Testing
-
-
+Click the link to view the show case page.
 
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
 
-📬 Contact
+## 📬 Contact
 
 For any questions or feedback, please contact ethanyifanzhu@gmail.com.
