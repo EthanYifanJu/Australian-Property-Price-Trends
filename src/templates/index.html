@@ -135,7 +135,7 @@
                 <option value="3" {% if request.form.get('property_type') == '3' %}selected{% endif %}>Residential property</option>
             </select>
 
-            <label for="region">Region:</label>
+            <label for="region">Region (Use "Ctrl" or "⌘" to select multiple regions):</label>
             <select name="region" id="region" multiple>
                 {% set selected_regions = request.form.getlist('region') %}
                 <option value="1GSYD" {% if '1GSYD' in selected_regions %}selected{% endif %}>Greater Sydney</option>
