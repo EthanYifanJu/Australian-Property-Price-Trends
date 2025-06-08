@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABS Data Visualisation</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>ABS Data Graph Generator</h1>
+
+    <form method="POST">
+        <label>Measure:</label>
+        <select name="measure">
+            <option value="1">Index Numbers</option>
+            <option value="2">Percentage Change from Previous Period</option>
+            <option value="3">Percentage Change from Previous Year</option>
+        </select><br><br>
+
+        <label>Property Type:</label>
+        <select name="property_type">
+            <option value="1">Attached dwellings</option>
+            <option value="2">Established houses</option>
+            <option value="3">Residential property</option>
+        </select><br><br>
+
+        <label>Region:</label>
+        <select name="region" multiple size="9">
+            <option value="1GSYD">Greater Sydney</option>
+            <option value="2GMEL">Greater Melbourne</option>
+            <option value="3GBRI">Greater Brisbane</option>
+            <option value="4GADE">Greater Adelaide</option>            
+            <option value="5GPER">Greater Perth</option>
+            <option value="6GHOB">Greater Hobart</option>
+            <option value="7GDAR">Greater Darwin</option>
+            <option value="8ACTE">Australian Capital Territory</option>
+            <option value="100">8 Capital Cities (Weighted Average)</option>
+        </select><br><br>
+
+        <label>Start Period (format: YYYY-QX):</label>
+        <input type="text" name="start_period" placeholder="Starts from 2003-Q3"><br><br>
+
+        <label>End Period (format: YYYY-QX):</label>
+        <input type="text" name="end_period" placeholder="Ends until 2021-Q4"><br><br>
+
+        <input type="submit" value="Generate Graph">
+    </form>
+
+    {% if graph_html %}
+        <h2>Result:</h2>
+        {{ graph_html | safe }}
+    {% endif %}
+</body>
+</html>

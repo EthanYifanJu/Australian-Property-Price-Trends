@@ -1,0 +1,1147 @@
+{
+  "meta": {
+    "schema": "https://raw.githubusercontent.com/sdmx-twg/sdmx-json/master/data-message/tools/schemas/2.0.0/sdmx-json-data-schema.json",
+    "id": "IREF057705",
+    "prepared": "2025-06-08T09:47:48Z",
+    "test": true,
+    "contentLanguages": [
+      "en"
+    ],
+    "sender": {
+      "id": "Stable_-_DotStat_v8",
+      "name": "unknown",
+      "names": {
+        "en": "unknown"
+      }
+    }
+  },
+  "data": {
+    "dataSets": [
+      {
+        "structure": 0,
+        "action": "Information",
+        "links": [
+          {
+            "urn": "urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ABS:RPPI(1.0.0)",
+            "rel": "DataStructure"
+          }
+        ],
+        "annotations": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "series": {
+          "0:0:0:0": {
+            "attributes": [
+              0
+            ],
+            "annotations": [],
+            "observations": {
+              "0": [
+                109.3
+              ],
+              "1": [
+                110.1
+              ],
+              "2": [
+                110.3
+              ],
+              "3": [
+                110.8
+              ],
+              "4": [
+                111.6
+              ],
+              "5": [
+                112.7
+              ],
+              "6": [
+                112
+              ],
+              "7": [
+                110.5
+              ],
+              "8": [
+                111.2
+              ],
+              "9": [
+                111.2
+              ],
+              "10": [
+                111.6
+              ],
+              "11": [
+                110.3
+              ],
+              "12": [
+                110.6
+              ],
+              "13": [
+                111
+              ],
+              "14": [
+                110.8
+              ],
+              "15": [
+                109.3
+              ],
+              "16": [
+                107.6
+              ],
+              "17": [
+                107.5
+              ],
+              "18": [
+                107.9
+              ],
+              "19": [
+                108.8
+              ],
+              "20": [
+                107.7
+              ],
+              "21": [
+                106.8
+              ],
+              "22": [
+                108.2
+              ],
+              "23": [
+                109.9
+              ]
+            }
+          },
+          "0:1:1:0": {
+            "attributes": [
+              0
+            ],
+            "annotations": [],
+            "observations": {
+              "0": [
+                118
+              ],
+              "1": [
+                123.5
+              ],
+              "2": [
+                127.5
+              ],
+              "3": [
+                129.8
+              ],
+              "4": [
+                131.6
+              ],
+              "5": [
+                135.7
+              ],
+              "6": [
+                138.5
+              ],
+              "7": [
+                146.8
+              ],
+              "8": [
+                152.8
+              ],
+              "9": [
+                157.4
+              ],
+              "10": [
+                159.9
+              ],
+              "11": [
+                164
+              ],
+              "12": [
+                163.1
+              ],
+              "13": [
+                161.5
+              ],
+              "14": [
+                156.6
+              ],
+              "15": [
+                151.6
+              ],
+              "16": [
+                146
+              ],
+              "17": [
+                144.5
+              ],
+              "18": [
+                149.9
+              ],
+              "19": [
+                158.2
+              ],
+              "20": [
+                161.8
+              ],
+              "21": [
+                157.3
+              ],
+              "22": [
+                156.9
+              ],
+              "23": [
+                162.7
+              ]
+            }
+          },
+          "0:1:2:0": {
+            "attributes": [
+              0
+            ],
+            "annotations": [],
+            "observations": {
+              "0": [
+                109.4
+              ],
+              "1": [
+                110
+              ],
+              "2": [
+                111.4
+              ],
+              "3": [
+                112.8
+              ],
+              "4": [
+                113.5
+              ],
+              "5": [
+                114.6
+              ],
+              "6": [
+                115.7
+              ],
+              "7": [
+                117.7
+              ],
+              "8": [
+                119.8
+              ],
+              "9": [
+                120.4
+              ],
+              "10": [
+                121
+              ],
+              "11": [
+                121.8
+              ],
+              "12": [
+                123
+              ],
+              "13": [
+                123.3
+              ],
+              "14": [
+                123.8
+              ],
+              "15": [
+                123.9
+              ],
+              "16": [
+                123.7
+              ],
+              "17": [
+                122.8
+              ],
+              "18": [
+                122.4
+              ],
+              "19": [
+                124.4
+              ],
+              "20": [
+                124.9
+              ],
+              "21": [
+                123.6
+              ],
+              "22": [
+                125.9
+              ],
+              "23": [
+                129.2
+              ]
+            }
+          },
+          "0:0:1:0": {
+            "attributes": [
+              0
+            ],
+            "annotations": [],
+            "observations": {
+              "0": [
+                109.7
+              ],
+              "1": [
+                112.4
+              ],
+              "2": [
+                114.2
+              ],
+              "3": [
+                115.5
+              ],
+              "4": [
+                114
+              ],
+              "5": [
+                115.5
+              ],
+              "6": [
+                115.9
+              ],
+              "7": [
+                119.2
+              ],
+              "8": [
+                118.4
+              ],
+              "9": [
+                121.6
+              ],
+              "10": [
+                121.1
+              ],
+              "11": [
+                124.2
+              ],
+              "12": [
+                123.6
+              ],
+              "13": [
+                123.3
+              ],
+              "14": [
+                121.9
+              ],
+              "15": [
+                121.7
+              ],
+              "16": [
+                116.6
+              ],
+              "17": [
+                116.2
+              ],
+              "18": [
+                120.4
+              ],
+              "19": [
+                125.6
+              ],
+              "20": [
+                127.5
+              ],
+              "21": [
+                126.2
+              ],
+              "22": [
+                126
+              ],
+              "23": [
+                129.2
+              ]
+            }
+          },
+          "0:0:2:0": {
+            "attributes": [
+              0
+            ],
+            "annotations": [],
+            "observations": {
+              "0": [
+                102.3
+              ],
+              "1": [
+                102.4
+              ],
+              "2": [
+                103.7
+              ],
+              "3": [
+                103.3
+              ],
+              "4": [
+                102.9
+              ],
+              "5": [
+                103.1
+              ],
+              "6": [
+                103.8
+              ],
+              "7": [
+                106.3
+              ],
+              "8": [
+                106.2
+              ],
+              "9": [
+                108.2
+              ],
+              "10": [
+                109.7
+              ],
+              "11": [
+                109.9
+              ],
+              "12": [
+                108.3
+              ],
+              "13": [
+                109.5
+              ],
+              "14": [
+                110.8
+              ],
+              "15": [
+                110.6
+              ],
+              "16": [
+                110.5
+              ],
+              "17": [
+                110.5
+              ],
+              "18": [
+                110.1
+              ],
+              "19": [
+                110.8
+              ],
+              "20": [
+                111.2
+              ],
+              "21": [
+                111
+              ],
+              "22": [
+                112
+              ],
+              "23": [
+                114.5
+              ]
+            }
+          },
+          "0:1:0:0": {
+            "attributes": [
+              0
+            ],
+            "annotations": [],
+            "observations": {
+              "0": [
+                113.5
+              ],
+              "1": [
+                114.5
+              ],
+              "2": [
+                116.4
+              ],
+              "3": [
+                118.4
+              ],
+              "4": [
+                118.6
+              ],
+              "5": [
+                120
+              ],
+              "6": [
+                120.4
+              ],
+              "7": [
+                123.9
+              ],
+              "8": [
+                123.7
+              ],
+              "9": [
+                124.7
+              ],
+              "10": [
+                125.5
+              ],
+              "11": [
+                127.2
+              ],
+              "12": [
+                126.2
+              ],
+              "13": [
+                127.3
+              ],
+              "14": [
+                128.3
+              ],
+              "15": [
+                127
+              ],
+              "16": [
+                125.1
+              ],
+              "17": [
+                124
+              ],
+              "18": [
+                125.1
+              ],
+              "19": [
+                127.6
+              ],
+              "20": [
+                129
+              ],
+              "21": [
+                127.8
+              ],
+              "22": [
+                129.8
+              ],
+              "23": [
+                133.6
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "structures": [
+      {
+        "name": "Residential Property Price Index",
+        "names": {
+          "en": "Residential Property Price Index"
+        },
+        "description": "Estimates of changes in residential property prices and the total value of Australia's dwelling stock, and preliminary housing market activity data. Unit of measure: Index/Percent. Geographic coverage: Australia/State/GCCSA. Catalogue number: 6416.0",
+        "descriptions": {
+          "en": "Estimates of changes in residential property prices and the total value of Australia's dwelling stock, and preliminary housing market activity data. Unit of measure: Index/Percent. Geographic coverage: Australia/State/GCCSA. Catalogue number: 6416.0"
+        },
+        "dimensions": {
+          "dataSet": [],
+          "series": [
+            {
+              "id": "MEASURE",
+              "name": "Measure",
+              "names": {
+                "en": "Measure"
+              },
+              "keyPosition": 0,
+              "roles": [
+                "MEASURE"
+              ],
+              "values": [
+                {
+                  "id": "1",
+                  "order": 0,
+                  "name": "Index Numbers",
+                  "names": {
+                    "en": "Index Numbers"
+                  },
+                  "annotations": [
+                    7,
+                    8
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "PROPERTY_TYPE",
+              "name": "Property type",
+              "names": {
+                "en": "Property type"
+              },
+              "keyPosition": 1,
+              "roles": [
+                "PROPERTY_TYPE"
+              ],
+              "values": [
+                {
+                  "id": "1",
+                  "order": 2,
+                  "name": "Attached dwellings",
+                  "names": {
+                    "en": "Attached dwellings"
+                  },
+                  "annotations": [
+                    9
+                  ]
+                },
+                {
+                  "id": "2",
+                  "order": 1,
+                  "name": "Established houses",
+                  "names": {
+                    "en": "Established houses"
+                  },
+                  "annotations": [
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "REGION",
+              "name": "Region",
+              "names": {
+                "en": "Region"
+              },
+              "keyPosition": 2,
+              "roles": [
+                "REGION"
+              ],
+              "values": [
+                {
+                  "id": "3GBRI",
+                  "order": 8,
+                  "name": "Greater Brisbane",
+                  "names": {
+                    "en": "Greater Brisbane"
+                  },
+                  "parent": "3",
+                  "parents": [
+                    "3"
+                  ],
+                  "annotations": [
+                    11
+                  ]
+                },
+                {
+                  "id": "2GMEL",
+                  "order": 5,
+                  "name": "Greater Melbourne",
+                  "names": {
+                    "en": "Greater Melbourne"
+                  },
+                  "parent": "2",
+                  "parents": [
+                    "2"
+                  ],
+                  "annotations": [
+                    12
+                  ]
+                },
+                {
+                  "id": "4GADE",
+                  "order": 11,
+                  "name": "Greater Adelaide",
+                  "names": {
+                    "en": "Greater Adelaide"
+                  },
+                  "parent": "4",
+                  "parents": [
+                    "4"
+                  ],
+                  "annotations": [
+                    13
+                  ]
+                },
+                {
+                  "id": "3",
+                  "order": 7,
+                  "name": "Queensland",
+                  "names": {
+                    "en": "Queensland"
+                  },
+                  "parent": "AUS",
+                  "parents": [
+                    "AUS"
+                  ],
+                  "annotations": [
+                    14
+                  ]
+                },
+                {
+                  "id": "AUS",
+                  "order": 0,
+                  "name": "Australia",
+                  "names": {
+                    "en": "Australia"
+                  },
+                  "annotations": [
+                    7
+                  ]
+                },
+                {
+                  "id": "2",
+                  "order": 4,
+                  "name": "Victoria",
+                  "names": {
+                    "en": "Victoria"
+                  },
+                  "parent": "AUS",
+                  "parents": [
+                    "AUS"
+                  ],
+                  "annotations": [
+                    15
+                  ]
+                },
+                {
+                  "id": "4",
+                  "order": 10,
+                  "name": "South Australia",
+                  "names": {
+                    "en": "South Australia"
+                  },
+                  "parent": "AUS",
+                  "parents": [
+                    "AUS"
+                  ],
+                  "annotations": [
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FREQ",
+              "name": "Frequency",
+              "names": {
+                "en": "Frequency"
+              },
+              "keyPosition": 3,
+              "roles": [
+                "FREQ"
+              ],
+              "values": [
+                {
+                  "id": "Q",
+                  "order": 8,
+                  "name": "Quarterly",
+                  "names": {
+                    "en": "Quarterly"
+                  }
+                }
+              ]
+            }
+          ],
+          "observation": [
+            {
+              "id": "TIME_PERIOD",
+              "name": "Time Period",
+              "names": {
+                "en": "Time Period"
+              },
+              "keyPosition": 4,
+              "roles": [
+                "TIME_PERIOD"
+              ],
+              "values": [
+                {
+                  "start": "2015-01-01T00:00:00",
+                  "end": "2015-03-31T00:00:00",
+                  "id": "2015-Q1",
+                  "name": "2015-Q1",
+                  "names": {
+                    "en": "2015-Q1"
+                  }
+                },
+                {
+                  "start": "2015-04-01T00:00:00",
+                  "end": "2015-06-30T00:00:00",
+                  "id": "2015-Q2",
+                  "name": "2015-Q2",
+                  "names": {
+                    "en": "2015-Q2"
+                  }
+                },
+                {
+                  "start": "2015-07-01T00:00:00",
+                  "end": "2015-09-30T00:00:00",
+                  "id": "2015-Q3",
+                  "name": "2015-Q3",
+                  "names": {
+                    "en": "2015-Q3"
+                  }
+                },
+                {
+                  "start": "2015-10-01T00:00:00",
+                  "end": "2015-12-31T00:00:00",
+                  "id": "2015-Q4",
+                  "name": "2015-Q4",
+                  "names": {
+                    "en": "2015-Q4"
+                  }
+                },
+                {
+                  "start": "2016-01-01T00:00:00",
+                  "end": "2016-03-31T00:00:00",
+                  "id": "2016-Q1",
+                  "name": "2016-Q1",
+                  "names": {
+                    "en": "2016-Q1"
+                  }
+                },
+                {
+                  "start": "2016-04-01T00:00:00",
+                  "end": "2016-06-30T00:00:00",
+                  "id": "2016-Q2",
+                  "name": "2016-Q2",
+                  "names": {
+                    "en": "2016-Q2"
+                  }
+                },
+                {
+                  "start": "2016-07-01T00:00:00",
+                  "end": "2016-09-30T00:00:00",
+                  "id": "2016-Q3",
+                  "name": "2016-Q3",
+                  "names": {
+                    "en": "2016-Q3"
+                  }
+                },
+                {
+                  "start": "2016-10-01T00:00:00",
+                  "end": "2016-12-31T00:00:00",
+                  "id": "2016-Q4",
+                  "name": "2016-Q4",
+                  "names": {
+                    "en": "2016-Q4"
+                  }
+                },
+                {
+                  "start": "2017-01-01T00:00:00",
+                  "end": "2017-03-31T00:00:00",
+                  "id": "2017-Q1",
+                  "name": "2017-Q1",
+                  "names": {
+                    "en": "2017-Q1"
+                  }
+                },
+                {
+                  "start": "2017-04-01T00:00:00",
+                  "end": "2017-06-30T00:00:00",
+                  "id": "2017-Q2",
+                  "name": "2017-Q2",
+                  "names": {
+                    "en": "2017-Q2"
+                  }
+                },
+                {
+                  "start": "2017-07-01T00:00:00",
+                  "end": "2017-09-30T00:00:00",
+                  "id": "2017-Q3",
+                  "name": "2017-Q3",
+                  "names": {
+                    "en": "2017-Q3"
+                  }
+                },
+                {
+                  "start": "2017-10-01T00:00:00",
+                  "end": "2017-12-31T00:00:00",
+                  "id": "2017-Q4",
+                  "name": "2017-Q4",
+                  "names": {
+                    "en": "2017-Q4"
+                  }
+                },
+                {
+                  "start": "2018-01-01T00:00:00",
+                  "end": "2018-03-31T00:00:00",
+                  "id": "2018-Q1",
+                  "name": "2018-Q1",
+                  "names": {
+                    "en": "2018-Q1"
+                  }
+                },
+                {
+                  "start": "2018-04-01T00:00:00",
+                  "end": "2018-06-30T00:00:00",
+                  "id": "2018-Q2",
+                  "name": "2018-Q2",
+                  "names": {
+                    "en": "2018-Q2"
+                  }
+                },
+                {
+                  "start": "2018-07-01T00:00:00",
+                  "end": "2018-09-30T00:00:00",
+                  "id": "2018-Q3",
+                  "name": "2018-Q3",
+                  "names": {
+                    "en": "2018-Q3"
+                  }
+                },
+                {
+                  "start": "2018-10-01T00:00:00",
+                  "end": "2018-12-31T00:00:00",
+                  "id": "2018-Q4",
+                  "name": "2018-Q4",
+                  "names": {
+                    "en": "2018-Q4"
+                  }
+                },
+                {
+                  "start": "2019-01-01T00:00:00",
+                  "end": "2019-03-31T00:00:00",
+                  "id": "2019-Q1",
+                  "name": "2019-Q1",
+                  "names": {
+                    "en": "2019-Q1"
+                  }
+                },
+                {
+                  "start": "2019-04-01T00:00:00",
+                  "end": "2019-06-30T00:00:00",
+                  "id": "2019-Q2",
+                  "name": "2019-Q2",
+                  "names": {
+                    "en": "2019-Q2"
+                  }
+                },
+                {
+                  "start": "2019-07-01T00:00:00",
+                  "end": "2019-09-30T00:00:00",
+                  "id": "2019-Q3",
+                  "name": "2019-Q3",
+                  "names": {
+                    "en": "2019-Q3"
+                  }
+                },
+                {
+                  "start": "2019-10-01T00:00:00",
+                  "end": "2019-12-31T00:00:00",
+                  "id": "2019-Q4",
+                  "name": "2019-Q4",
+                  "names": {
+                    "en": "2019-Q4"
+                  }
+                },
+                {
+                  "start": "2020-01-01T00:00:00",
+                  "end": "2020-03-31T00:00:00",
+                  "id": "2020-Q1",
+                  "name": "2020-Q1",
+                  "names": {
+                    "en": "2020-Q1"
+                  }
+                },
+                {
+                  "start": "2020-04-01T00:00:00",
+                  "end": "2020-06-30T00:00:00",
+                  "id": "2020-Q2",
+                  "name": "2020-Q2",
+                  "names": {
+                    "en": "2020-Q2"
+                  }
+                },
+                {
+                  "start": "2020-07-01T00:00:00",
+                  "end": "2020-09-30T00:00:00",
+                  "id": "2020-Q3",
+                  "name": "2020-Q3",
+                  "names": {
+                    "en": "2020-Q3"
+                  }
+                },
+                {
+                  "start": "2020-10-01T00:00:00",
+                  "end": "2020-12-31T00:00:00",
+                  "id": "2020-Q4",
+                  "name": "2020-Q4",
+                  "names": {
+                    "en": "2020-Q4"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "attributes": {
+          "dataSet": [],
+          "dimensionGroup": [],
+          "series": [
+            {
+              "id": "UNIT_MEASURE",
+              "name": "Unit of Measure",
+              "names": {
+                "en": "Unit of Measure"
+              },
+              "roles": [
+                "UNIT_MEASURE"
+              ],
+              "relationship": {
+                "dimensions": [
+                  "MEASURE"
+                ]
+              },
+              "values": [
+                {
+                  "id": "IN",
+                  "order": 5,
+                  "name": "Index Numbers",
+                  "names": {
+                    "en": "Index Numbers"
+                  }
+                }
+              ],
+              "annotations": [
+                17
+              ]
+            }
+          ],
+          "observation": [
+            {
+              "id": "OBS_STATUS",
+              "name": "Observation Status",
+              "names": {
+                "en": "Observation Status"
+              },
+              "roles": [
+                "OBS_STATUS"
+              ],
+              "relationship": {
+                "observation": {}
+              },
+              "values": []
+            },
+            {
+              "id": "OBS_COMMENT",
+              "name": "Observation Comment",
+              "names": {
+                "en": "Observation Comment"
+              },
+              "roles": [
+                "OBS_COMMENT"
+              ],
+              "relationship": {
+                "observation": {}
+              },
+              "values": []
+            }
+          ]
+        },
+        "annotations": [
+          {
+            "type": "NonProductionDataflow",
+            "text": "true",
+            "texts": {
+              "en": "true"
+            }
+          },
+          {
+            "title": "REGION",
+            "type": "LAYOUT_COLUMN"
+          },
+          {
+            "title": "TIME_PERIOD",
+            "type": "LAYOUT_ROW"
+          },
+          {
+            "title": "MEASURE",
+            "type": "LAYOUT_ROW_SECTION"
+          },
+          {
+            "title": "FREQ=Q,TIME_PERIOD_START=2020-Q2",
+            "type": "DEFAULT"
+          },
+          {
+            "title": "LASTNOBSERVATIONS=8",
+            "type": "DEFAULT"
+          },
+          {
+            "type": "EXT_RESOURCE",
+            "text": "Methodology|https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/residential-property-price-indexes-eight-capital-cities/latest-release#methodology|https://www.abs.gov.au/ausstats/wmdata.nsf/activeimages/methodology/$File/methodology.png",
+            "texts": {
+              "en": "Methodology|https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/residential-property-price-indexes-eight-capital-cities/latest-release#methodology|https://www.abs.gov.au/ausstats/wmdata.nsf/activeimages/methodology/$File/methodology.png"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "1",
+            "texts": {
+              "en": "1"
+            }
+          },
+          {
+            "type": "FULL_NAME",
+            "text": "Index Numbers",
+            "texts": {
+              "en": "Index Numbers"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "30",
+            "texts": {
+              "en": "30"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "20",
+            "texts": {
+              "en": "20"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "9",
+            "texts": {
+              "en": "9"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "6",
+            "texts": {
+              "en": "6"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "12",
+            "texts": {
+              "en": "12"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "8",
+            "texts": {
+              "en": "8"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "5",
+            "texts": {
+              "en": "5"
+            }
+          },
+          {
+            "type": "ORDER",
+            "text": "11",
+            "texts": {
+              "en": "11"
+            }
+          },
+          {
+            "type": "CONTEXT",
+            "text": "If a unit multiplier exists the data is recorded according to the combination of the unit multiplier and the unit of measure.",
+            "texts": {
+              "en": "If a unit multiplier exists the data is recorded according to the combination of the unit multiplier and the unit of measure."
+            }
+          }
+        ],
+        "dataSets": [
+          0
+        ]
+      }
+    ]
+  },
+  "errors": []
+}
