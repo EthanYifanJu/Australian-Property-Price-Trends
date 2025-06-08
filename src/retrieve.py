@@ -108,8 +108,11 @@ class DataProcessor:
         if self.endPeriod:
             url += "&endPeriod=" + self.endPeriod
         # print(url)
-        response = requests.get(url)
-        data = response.json()
+        try:
+            response = requests.get(url)
+            data = response.json()
+        except:
+            return
 
         with open(self.file_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2)
@@ -167,19 +170,3 @@ class DataProcessor:
                       labels={"OBS_VALUE": self.structures['attributes']['series'][0]['values'][0]['name']})
         fig.update_layout(autosize=True)
         return fig.to_html(full_html=False)
-    
-        # hue_order = sorted(df['REGION_PROPERTY'].unique())
-        # # Plot
-        # plt.figure(figsize=(10, 6))
-        # sns.lineplot(data=df, x='TIME_PERIOD', y='OBS_VALUE', hue='REGION_PROPERTY', hue_order=hue_order)
-        # plt.title(df['MEASURE'][0])
-        # plt.xlabel('Time Period')
-        # plt.ylabel(self.structures['attributes']['series'][0]['values'][0]['name'])
-        # plt.legend(title='Region-Property type')
-        # plt.tight_layout()
-        # plt.show()
-
-# dp = DataProcessor()
-# dp.fetch_data(measure="1", property_type="1", region="1GSYD", startPeriod="2015-Q1", endPeriod="2020-Q4")
-# records = dp.process_data()
-# dp.visualise_data(records)

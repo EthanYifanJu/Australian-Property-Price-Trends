@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash, redirect, url_for
 from retrieve import DataProcessor
 
 app = Flask(__name__)
+app.secret_key = 'b97c1a2e8fe8499ab938af617cd19b2c'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -20,8 +21,13 @@ def index():
         region = region[:-1]
 
         dp = DataProcessor()
-        dp.fetch_data(measure, property_type, region, start_period, end_period)
-        df = dp.process_data()
+        try:
+            dp.fetch_data(measure, property_type, region, start_period, end_period)
+            df = dp.process_data()
+        except Exception as e:
+            flash(f"An error occurred: {str(e)}")
+            return redirect(url_for('index'))
+
         graph_html = dp.visualise_data(df)
 
     return render_template('index.html', graph_html=graph_html)

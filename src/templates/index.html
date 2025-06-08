@@ -10,37 +10,39 @@
     <form method="POST">
         <label>Measure:</label>
         <select name="measure">
-            <option value="1">Index Numbers</option>
-            <option value="2">Percentage Change from Previous Period</option>
-            <option value="3">Percentage Change from Previous Year</option>
+            <option value="1" {% if request.form.get('measure') == '1' %}selected{% endif %}>Index Numbers</option>
+            <option value="2" {% if request.form.get('measure') == '2' %}selected{% endif %}>Percentage Change from Previous Period</option>
+            <option value="3" {% if request.form.get('measure') == '3' %}selected{% endif %}>Percentage Change from Previous Year</option>
         </select><br><br>
 
         <label>Property Type:</label>
         <select name="property_type">
-            <option value="1">Attached dwellings</option>
-            <option value="2">Established houses</option>
-            <option value="3">Residential property</option>
+            <option value="1" {% if request.form.get('property_type') == '1' %}selected{% endif %}>Attached dwellings</option>
+            <option value="2" {% if request.form.get('property_type') == '2' %}selected{% endif %}>Established houses</option>
+            <option value="3" {% if request.form.get('property_type') == '3' %}selected{% endif %}>Residential property</option>
         </select><br><br>
 
         <label>Region:</label>
         <select name="region" multiple size="9">
-            <option value="1GSYD">Greater Sydney</option>
-            <option value="2GMEL">Greater Melbourne</option>
-            <option value="3GBRI">Greater Brisbane</option>
-            <option value="4GADE">Greater Adelaide</option>            
-            <option value="5GPER">Greater Perth</option>
-            <option value="6GHOB">Greater Hobart</option>
-            <option value="7GDAR">Greater Darwin</option>
-            <option value="8ACTE">Australian Capital Territory</option>
-            <option value="100">8 Capital Cities (Weighted Average)</option>
+            {% set selected_regions = request.form.getlist('region') %}
+            <option value="1GSYD" {% if '1GSYD' in selected_regions %}selected{% endif %}>Greater Sydney</option>
+            <option value="2GMEL" {% if '2GMEL' in selected_regions %}selected{% endif %}>Greater Melbourne</option>
+            <option value="3GBRI" {% if '3GBRI' in selected_regions %}selected{% endif %}>Greater Brisbane</option>
+            <option value="4GADE" {% if '4GADE' in selected_regions %}selected{% endif %}>Greater Adelaide</option>
+            <option value="5GPER" {% if '5GPER' in selected_regions %}selected{% endif %}>Greater Perth</option>
+            <option value="6GHOB" {% if '6GHOB' in selected_regions %}selected{% endif %}>Greater Hobart</option>
+            <option value="7GDAR" {% if '7GDAR' in selected_regions %}selected{% endif %}>Greater Darwin</option>
+            <option value="8ACTE" {% if '8ACTE' in selected_regions %}selected{% endif %}>Australian Capital Territory</option>
+            <option value="100" {% if '100' in selected_regions %}selected{% endif %}>8 Capital Cities (Weighted Average)</option>
         </select><br><br>
 
         <label>Start Period (format: YYYY-QX):</label>
-        <input type="text" name="start_period" placeholder="Starts from 2003-Q3"><br><br>
+        <input type="text" name="start_period" placeholder="Starts from 2003-Q3"
+               value="{{ request.form.get('start_period', '') }}"><br><br>
 
         <label>End Period (format: YYYY-QX):</label>
-        <input type="text" name="end_period" placeholder="Ends until 2021-Q4"><br><br>
-
+        <input type="text" name="end_period" placeholder="Ends until 2021-Q4"
+               value="{{ request.form.get('end_period', '') }}"><br><br>
         <input type="submit" value="Generate Graph">
     </form>
 
@@ -48,5 +50,18 @@
         <h2>Result:</h2>
         {{ graph_html | safe }}
     {% endif %}
+
+    <script>
+        window.onload = function () {
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    const msg = {{ messages[0]|tojson }};
+                    alert(msg);
+                {% endif %}
+            {% endwith %}
+        };
+    </script>
+    
+    
 </body>
 </html>
