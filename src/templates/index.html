@@ -149,11 +149,11 @@
                 <option value="100" {% if '100' in selected_regions %}selected{% endif %}>8 Capital Cities (Weighted Average)</option>
             </select>
 
-            <label for="start_period">Start Period (e.g., 2003-Q3):</label>
+            <label for="start_period">Start Period (format: YYYY-QX, e.g., 2003-Q3):</label>
             <input type="text" name="start_period" id="start_period" placeholder="Starts from 2003-Q3"
                    value="{{ request.form.get('start_period', '') }}">
 
-            <label for="end_period">End Period (e.g., 2021-Q4):</label>
+            <label for="end_period">End Period (format: YYYY-QX, e.g., 2021-Q4):</label>
             <input type="text" name="end_period" id="end_period" placeholder="Ends until 2021-Q4"
                    value="{{ request.form.get('end_period', '') }}">
 
@@ -161,7 +161,7 @@
         </form>
 
         {% if graph_html %}
-            <h2>Result:</h2>
+            <h2>Result</h2>
             {{ graph_html | safe }}
         {% endif %}
     </div>
