@@ -8,11 +8,9 @@ This project leverages data from the [Australian Bureau of Statistics (ABS)](htt
 
 ## 🔍 Features
 
-- Interactive time-series charts of property price indexes for each capital city.
-- Comparison tools to analyse trends between different cities.
-- Filters to view data by property type (e.g., houses, attached dwellings).
-- Geospatial visualisations highlighting regional price changes.
-- Downloadable reports and data summaries.
+- Interactive time-series charts of property price indexes & percentage change for each capital city.
+- Comparison tools to analyse trends between different capital cities.
+- Filters to view data by property type (e.g., houses, attached dwellings), region & specific time period.
 
 ## 📂 Data Sources
 
@@ -37,11 +35,12 @@ Australian Bureau of Statistics (ABS):
 
 ### Deployment
 
-- **GitHub Pages** – Hosts the static version of the website for free.
+- **Render** – Hosts the live web application with backend support.
+
 
 ## 🚀 Getting Started
 
-Click the link to view the show case page.
+Click [here](https://australian-property-price-trends.onrender.com) to view the show case page.
 
 ## 📄 License
 
@@ -49,4 +48,4 @@ This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file
 
 ## 📬 Contact
 
-For any questions or feedback, please contact ethanyifanzhu@gmail.com.
+For any questions or feedback, please [contact me](mailto:ethanyifanzhu@gmail.com).
