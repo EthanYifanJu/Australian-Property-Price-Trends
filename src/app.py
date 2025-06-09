@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
-from retrieve import DataProcessor
+from abs_data_retriever import DataProcessor
 
 app = Flask(__name__)
 app.secret_key = 'b97c1a2e8fe8499ab938af617cd19b2c'
