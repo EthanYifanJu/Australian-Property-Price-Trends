@@ -118,3 +118,4 @@ widgetsnbextension==4.0.5
 wrapt==1.16.0
 flask
 retrieve
+seaborn
