@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from abs_data_retriever import DataProcessor
 
 app = Flask(__name__)
